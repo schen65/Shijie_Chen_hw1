@@ -1,0 +1,42 @@
+Meet with your team to discuss the details of how you are going to approach the group assignment. 
+The more details you provide the higher the chance of getting credit for this bonus assignment. 
+
+Question 1:
+How often are you going to meet?
+Answer:
+
+Question 2:
+Which tools and communication technology are you going to use?
+Answer:
+
+Question 3:
+Who is going to complete which tasks?
+Answer:
+
+Question 4:
+What are the expected completion dates of each task?
+Answer:
+
+Question 5:
+Who is going to be the repo owner?
+Answer:
+
+Question 6:
+What is your process to accomplish tasks and review code?
+
+Question 7:
+How are you going to hold each team member accountable to stay on top of their tasks?
+
+Question 7:
+Set up the assignment repo per the assignment document and invite all members and ballingsclass.
+Clone the repo to your disk.
+Copy the file from your firstname_lastname repo, to your assignment folder.
+Using commands everyone should push this file with their answers to the assignment repo after creating a branch 
+called plan_lastname, and do a pull request, wich the repo owner will execute.
+We will check the repo to see if everything if this is done correctly.
+Don't forget to also push to your firstname_lastname repo and do a pull request.
+
+
+
+
+
