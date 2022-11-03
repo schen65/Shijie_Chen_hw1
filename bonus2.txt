@@ -1,0 +1,51 @@
+Git -- Bonus assignment 2
+
+Note 1: this bonus assignment comes in the form of steps to be completed in order
+
+Note 2: the steps assume that you are viewing this file in your browser on GitHub and are executing the commands on your computer up until and including step 6. 
+Once step 6 is done (i.e., the file is open), you can close your browser and follow the remaining steps from the file itself. 
+The steps also assume that you hold off on providing your answers to steps 1 - 6 in the file until you get to step 7. 
+
+Note 3: As always, answers come in the form of commands
+
+
+1. Clone the firstname_lastname repo that was created for you to your computer
+
+
+
+2. Display the config file of your repo
+
+
+
+3. Copy the new bonus assignment and name it firstname_lastname_2.txt, with 2 being the number of the bonus assignment
+
+
+
+4. Create a new branch called bonus_2
+
+
+
+5. Switch to that branch
+
+
+
+6. Open firstname_lastname_2.txt 
+
+
+
+7. Answer questions 1 to 6 inside this file beneath every question. Then stage the changes and commit to branch bonus_2 with the commit message "Answer questions 1 to 6" and write that command as an answer to question 7.
+
+
+
+8. Get the status
+
+
+
+9. After writing the command in this file for step 8, stage the changes again and commit again, this time with commit message "Answer question 8"
+
+
+
+10. Write the command to push bonus_2 to your repo, save this file, then execute the actual push command that you wrote below, then verify on GitHub whether all your changes are there, then do a pull request. The answer to this question is the push command.
+
+
+
