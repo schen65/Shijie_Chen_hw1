@@ -10,6 +10,15 @@
 --should be replaced by the values that you assigned to them.
 --Answer:
 
+DO $$
+DECLARE
+    var1 text;
+    var2 text;
+BEGIN
+    var1 = 'Hello';
+    var2 = 'world';
+    RAISE NOTICE '% % how are you doing',var1, var2;
+END $$;
 
 ---------------------------------
 --Exercise 2:
@@ -17,6 +26,14 @@
 --Insert a record with 5 values.
 --Answer:
 
+create table a (
+    a numeric array
+);
+
+insert into a
+values ('{1,2,3,4,5}');
+  
+--select * from a; 
 
 ---------------------------------
 --Exercise 3:
@@ -24,7 +41,20 @@
 --Use it to create a new table and insert a record.
 --Answer:
 
+create type mycompositetype as (
+    a int,
+    b varchar(20),
+    c double precision
+);
 
+create table ex3 (
+    ex3 mycompositetype
+);
+
+insert into ex3
+values ((1,'hello',2.2));
+
+--select * from ex3;
 
 ---------------------------------
 --Exercise 4:
@@ -36,6 +66,26 @@
 --Step 5: select all records from that materialized view
 
 --Answer:
+
+--step 1
+create materialized view mat_vw_ex3 as (
+    select * from ex3
+);
+
+--step 2
+insert into ex3
+values ((2,'world',3.3));
+
+--step 3
+select * from mat_vw_ex3;
+
+--step 4
+refresh materialized view mat_vw_ex3;
+
+--step 5
+select * from mat_vw_ex3;
+
+
 
 
 ---------------------------------------------
@@ -82,6 +132,11 @@ select * from c;
 
 --Answer:
 
+(select * from a
+union all
+select * from b)
+intersect all
+select * from c;
 
 
 ---------------------------------------------
@@ -103,14 +158,15 @@ select * from a;
 --Using a nested looping construct, print to the screen, one by one, the values of the first record, and the second record.
 
 --Answer:
+
 DO $$
-DECLARE
-    counter INT ARRAY;
-    rec INT;
-BEGIN
-    FOR counter IN (SELECT a FROM a) LOOP
-        FOREACH rec in ARRAY counter LOOP
-        RAISE NOTICE '%',  rec;
+DECLARE 
+    val int array;
+    val2 int;
+BEGIN 
+    FOR val IN (select a from a) LOOP
+        FOREACH val2 IN array val LOOP
+            raise notice '%', val2;
         END LOOP;
     END LOOP;
 END $$;

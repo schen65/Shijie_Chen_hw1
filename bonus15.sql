@@ -12,7 +12,7 @@ select * from a;
 --If col1 is null, return a 0, otherwise return the value in col1.
 --Write this the shortest possible way.
 --Answer:
-
+SELECT COALESCE(col1,0) FROM a;
 
 
 --------------------------------------------------
@@ -26,7 +26,10 @@ select * from a;
 --Do not use a where-clause
 --Order the results by id.
 --Answer:
-
+SELECT id,
+COUNT(CASE WHEN x ='b' THEN 1 ELSE NULL END) as counts
+FROM a
+GROUP BY id;
 
 
 
@@ -43,7 +46,11 @@ select * from a;
 --'1' when the col is 1
 --'>1' for all other values
 --Answer:
+DO$$
+DECLARE
 
+BEGIN
+END$$;
 
 
 

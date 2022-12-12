@@ -1,0 +1,80 @@
+Meet with your team to discuss the details of how you are going to approach the group assignment. 
+The more details you provide the higher the chance of getting credit for this bonus assignment. 
+
+Question 1:
+How often are you going to meet?
+Answer:
+Typically students meet twice per week, starting immediately after the assignment was made available.
+
+Question 2:
+Which tools and communication technology are you going to use?
+Answer:
+You will need Python, CLI, pgSQL, Git and GitHub. Typically students also use Slack, Zoom and, of course, email.
+
+Question 3:
+Who is going to complete which tasks?
+Answer:
+Here are some broad tasks to get you started. Put these broad categories in a table, and create subtasks that you can divide among
+your team. Have your team-members' names in the columns of the table, and set target dates for completion in the cells.
+-Set up repo invite collaborators and act as repo owner
+-Maintain meetings.txt file containing the date, agenda, and actions items with names and deadlines
+-Automate getting data from a URL on a daily basis and storing it in a file
+-Inserting data into a Postgres database when it lands on disk
+-Prepare data in a format for visualization / analysis
+-Generate a Dash dashboard with metrics about the data and the pipeline's operations
+-Serve data through a flask API yielding no more than ten records for each API call
+-Extract data through the API
+-Prepare presentation
+
+
+Question 4:
+What are the expected completion dates of each task?
+Answer:
+Work backwards from the presentation deadline, and study the schedule in the syllabus to see when you are 
+going to acquire skills that you need for each task to set deadlines.
+
+Question 5:
+Who is going to be the repo owner?
+Answer:
+Whoever is willing to put in the effort to lead meetings and code reviews.
+
+Question 6:
+What is your process to accomplish tasks and review code?
+Answer:
+Have action items and deliverables to be completed by the next meeting.
+Then, you can start your next meeting by going through the planned actions items person by person.
+If somebody didn't finish their action item, discuss what was blocking them and help them overcome the obstacle or at least get one step closer to solving the problem.
+Make sure there is enough time to have everyone go through their deliverables.
+The repo owner needs to review code, request changes if necessary, and approve pull requests. This should be done during the meeting. 
+
+
+Question 7:
+How are you going to hold each team member accountable to stay on top of their tasks?
+Answer:
+Visibility of who has accomplished what in a table is a great way to do this.
+Remember that this table should be in the show and tell and final presentation.
+
+
+Question 7:
+Set up the assignment repo per the assignment document and invite all members and ballingsclass.
+Clone the repo to your disk.
+Copy the file from your firstname_lastname repo, to your assignment folder.
+Using commands everyone should push this file with their answers to the assignment repo after creating a branch 
+called plan_lastname, and do a pull request, wich the repo owner will execute.
+We will check the repo to see if everything if this is done correctly.
+Don't forget to also push to your firstname_lastname repo and do a pull request.
+
+Inviting collaborators: settings > manage access > invite a collaborator
+Follow the steps on slides 15 an 16 in retrieving_and_submitting_assignments.pdf
+Then:
+git clone link_to_your_assignment_repo
+cp firstname_lastname/bonus2.1.txt assignment_repo_name/bonus2.1.txt
+git branch plan_lastname
+git checkout plan_lastname
+git add .
+git commit -m 'message' 
+git push origin plan_lastname
+
+
+
+
